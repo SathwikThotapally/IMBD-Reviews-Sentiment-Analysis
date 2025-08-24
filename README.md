@@ -3,7 +3,6 @@
 This is an ongoing project focused on performing sentiment analysis on movie reviews from the IMDB dataset. The objective is to classify each review as either **positive** or **negative** using machine learning techniques.
 
 The repository currently contains:
-- A CSV file with the dataset (`IMDB Dataset.csv`)
 - A Jupyter notebook (`IMDBSentiment.ipynb`) that includes data exploration, preprocessing, feature extraction, model training, and evaluation
 
 So far, the workflow has been implemented end-to-end, including:
