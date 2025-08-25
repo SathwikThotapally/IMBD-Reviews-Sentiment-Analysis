@@ -41,6 +41,6 @@ The dataset used contains IMDB movie reviews labeled as either positive or negat
 
 🚧 **In Progress**
 
-All major steps of the ML workflow are complete. The next task is to organize and clean up the notebook for clarity, structure, and readability.
+All major steps of the ML workflow are complete. The next task is to evaluate the model and organize and clean up the notebook for clarity, structure, and readability.
 
 Stay tuned for updates!
