@@ -10,16 +10,12 @@ So far, the workflow has been implemented end-to-end, including:
 - Text cleaning using NLTK (tokenization, stopword removal, etc.)
 - Feature extraction (e.g., TF-IDF)
 - Model training using traditional ML algorithms (e.g., Logistic Regression)
+- Model evaluation using metrics (Accuracy, Precision, Recall, F1-score)
 
 
 ## To-Do
 
 - Organize and clean up the Jupyter notebook with proper structure and headings
-- Finalize the model evaluation, including:
-  - Accuracy
-  - Precision
-  - Recall
-  - F1-score
 - Add visualizations for results (e.g. confusion matrix)
 
 
