@@ -1,42 +1,79 @@
 # IMDB Reviews Sentiment Analysis
 
-This is an ongoing project focused on performing sentiment analysis on movie reviews from the IMDB dataset. The objective is to classify each review as either **positive** or **negative** using machine learning techniques.
+## 📖 Project Overview
 
-The repository currently contains:
-- A Jupyter notebook (`IMDBSentiment.ipynb`) that includes data exploration, preprocessing, feature extraction, model training, and evaluation
+This project focuses on **sentiment analysis** of IMDB movie reviews, aiming to classify reviews as **positive** or **negative**. The project demonstrates a complete machine learning workflow for text classification, including **text preprocessing, feature extraction, model training, evaluation, and comparison**.
 
-So far, the workflow has been implemented end-to-end, including:
-- Data loading and basic preprocessing
-- Text cleaning using NLTK (tokenization, stopword removal, etc.)
-- Feature extraction (e.g., TF-IDF)
-- Model training using traditional ML algorithms (e.g., Logistic Regression)
-- Model evaluation using metrics (Accuracy, Precision, Recall, F1-score)
+---
 
+## 🗂 Dataset
 
-## To-Do
+- The dataset consists of **IMDB movie reviews** labeled as positive or negative.
+- Each review is a piece of raw text.
+- The target variable is `sentiment` (positive/negative).
 
-- Organize and clean up the Jupyter notebook with proper structure and headings
-- Add visualizations for results (e.g. confusion matrix)
+---
 
+## ✨ Text Preprocessing
 
-## Dataset
+Text data was preprocessed using **NLTK** and Python libraries. Key steps include:
 
-The dataset used contains IMDB movie reviews labeled as either positive or negative. This is a commonly used dataset for binary sentiment classification tasks in NLP.
+- **Tokenization** – Splitting text into individual words.  
+- **Lowercasing** – Converting all text to lowercase.  
+- **Stopwords Removal** – Removing common words that do not contribute to sentiment.  
+- **Lemmatization** – Reducing words to their base form (e.g., “running” → “run”).  
 
+These steps ensure that the model focuses on meaningful features and reduces noise in the data.
 
-## Libraries & Tools
+---
 
-- Python
-- Jupyter Notebook
-- Pandas
-- NumPy
-- scikit-learn
-- NLTK
+## 🛠 Feature Extraction
 
-## Project Status
+- **TF-IDF Vectorization** was used to convert text into numerical features.  
+- TF-IDF captures the importance of words in a document relative to the entire corpus.  
+- Parameters like **n-grams** and **maximum features** can be adjusted to improve performance.
 
-🚧 **In Progress**
+---
 
-All major steps of the ML workflow are complete. The next task is to evaluate the model and organize and clean up the notebook for clarity, structure, and readability.
+## 🤖 Models Used
 
-Stay tuned for updates!
+Three machine learning models were trained and evaluated:
+
+1. **Logistic Regression** – A linear model suitable for high-dimensional, sparse text data.  
+2. **Multinomial Naive Bayes** – A probabilistic model commonly used for text classification.  
+3. **Random Forest Classifier** – An ensemble method capable of handling complex patterns in the data.
+
+---
+
+## 📊 Evaluation Metrics
+
+Models were evaluated using:
+
+- **Accuracy** – Overall correctness of predictions.  
+- **Precision** – Correctness of positive predictions.  
+- **Recall** – Ability to identify all positive samples.  
+- **F1-score** – Balance between precision and recall.  
+
+**Result Summary:**  
+- Logistic Regression achieved the **highest accuracy and F1-score**, outperforming the other models.  
+- Multinomial Naive Bayes performed well but slightly lower than Logistic Regression.  
+- Random Forest, while capable, showed lower performance due to high-dimensional sparse features.
+
+---
+
+## 🏁 Conclusion
+
+- Logistic Regression is the **best-performing model** for this problem, highlighting the effectiveness of linear models for sparse text data.  
+- Naive Bayes remains competitive for text classification tasks.  
+- Random Forest works but may require additional feature engineering or dimensionality reduction.  
+
+**Future Improvements:**  
+- Hyperparameter tuning for all models.  
+- Experimenting with **n-grams** or **word embeddings** (e.g., Word2Vec, GloVe).  
+- Exploring **deep learning models** like LSTM or BERT for better semantic understanding.  
+
+---
+
+👤 Author: Sathwik Thotapally
+📧 Email: sathwikthotapally@gmail.com
+
